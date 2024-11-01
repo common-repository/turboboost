@@ -1,0 +1,7 @@
+{
+    "require": {
+        "rosell-dk/webp-convert": "^2.9",
+        "woocommerce/action-scheduler": "^3.7"
+    }
+    
+}

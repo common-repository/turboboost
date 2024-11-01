@@ -1,0 +1,411 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .turbo-tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.turbo-tooltip-icon::before {
+    content: "i";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    color: #2271b1;
+    text-align: center;
+    line-height: 19px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px groove #2271b1;
+    margin-left: 6px;
+    font-weight: 700;
+}
+
+.turbo-tooltip-content {
+    position: absolute;
+    top: 20%;
+    left: 120%;
+    width: 400px;
+    background-color: #2271b1;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    display: none;
+    padding: 12px;
+    z-index: 999;
+}
+
+.turbo-tooltip-container:hover .turbo-tooltip-content {
+    display: block;
+}
+
+.turbo-tooltip-icon{
+    z-index: 1;
+}
+.tb-align-settings{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+    column-gap: 12px;
+}
+.turbo-ui.turbo-dashboard  {
+  background-color: transparent;
+}
+.turbo-ui.turbo-dashboard h2.main-title {
+  font-size: 30px;
+}
+.turbo-ui form{
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    padding: 46px;
+    box-shadow: 4px 2px 7px -3px #cec9c9;
+}
+.turbo-ui form h2 {
+    padding-bottom: 18px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.turbo-ui .form-table th {
+    width: 29%;
+}
+.turbo-ui .turbo-tooltip-content p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 1em 0;
+    font-weight: 400;
+    margin: 0px;
+}
+.turbo-ui form .submit .button-primary {
+    padding: 7px;
+    min-width: 136px;
+    font-size: 15px;
+}
+.turbo-ui form .submit {
+    margin-top: 100px;
+}
+.turbo-ui .switch-container {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  /* Hide the default checkbox */
+  .turbo-ui .switch-container input {
+    display: none;
+  }
+
+  /* Style for the switch track */
+  .turbo-ui .switch-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 32px;
+    background-color: #ccc;
+    border-radius: 17px;
+    cursor: pointer;
+  }
+
+  /* Style for the switch handle */
+  .turbo-ui .switch-handle {
+    position: absolute;
+    top: 1.5px;
+    left: 3px;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Move the switch handle to the right when the checkbox is checked */
+  .turbo-ui .switch-container input:checked + .switch-track .switch-handle {
+    transform: translateX(26px);
+  }
+
+  /* Style for the label (domain name) */
+  .turbo-ui .switch-label {
+    margin-left: 10px;
+  }
+  .turbo-ui .relative {
+    position: relative;
+  }
+  .turbo-ui form input[type=checkbox] {
+    width: 56px;
+    height: 29px;
+    background: #d0c9c9;
+    border: none;
+    box-shadow: none;
+    border-radius: 100px;
+    position: relative;
+  }
+  .turbo-ui form input[type=checkbox]:checked:before{
+    margin: -0.1875rem 0 0 -0.25rem;
+    height: 23px;
+    width: 23px;
+    content: '';
+    background: #fff;
+    border-radius: 100px;
+    top: 5.5px;
+    position: absolute;
+    right: 4px; 
+  }
+  .turbo-ui form input[type=checkbox]:checked {
+    background: #2271b1;
+  }
+  .turbo-ui form input[type=checkbox]:not(:checked)::before {
+    left: 8px;
+    margin: -0.1875rem 0 0 -0.25rem;
+    height: 23px;
+    width: 23px;
+    content: '';
+    background: #fff;
+    border-radius: 100px;
+    top: 5.5px;
+    position: absolute;
+  }
+  .turbo-ui .form-table td div {
+    margin-bottom: 15px;
+  }
+  .wrap.turbo-ui {
+    padding: 30px 10px;
+  }
+  .turbo-ui .form-table th {
+    padding: 28px 10px 0px 0;
+}
+.turbo-ui .form-table td {
+    padding: 28px 10px 6px;
+}
+.turbo-ui .form-table tr {
+  border: 1px solid #a6a2a2;
+  border-right: none;
+  border-left: none;
+}
+
+#el:before {
+  border-radius: 200px 200px 0 0;
+  box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.15) inset;
+  content: "";
+  height: 200px;
+  position: absolute;
+  width: 200px;
+}
+
+#el {
+  border-radius: 200px 200px 0 0;
+  height: 100px;
+  margin: 0 auto 2.5em;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+}
+#el:after {
+  background: #fff;
+  border-radius: 140px 140px 0 0;
+  bottom: 0;
+  box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.15);
+  color: #000;
+  content: attr(data-value);
+  font-size: 3.2em;
+  font-weight: 100;
+  height: 70px;
+  left: 30px;
+  line-height: 95px;
+  position: absolute;
+  text-align: center;
+  width: 140px;
+  z-index: 3;
+}
+
+span#needle {
+  background: #000;
+  border-radius: 4px;
+  bottom: -4px;
+  box-shadow: 3px -1px 4px rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 8px;
+  left: 10px;
+  position: absolute;
+  width: 90px;
+  transform-origin: 100% 4px;
+  transition: all 1s;
+}
+.turbo-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4em 1em;
+  row-gap: 12px;
+  column-gap: 12px;
+  
+}
+.info-block h3 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+  color: #5f6260;
+  line-height: 28px;
+}
+.info-block {
+  padding: 1em 1em 2em 1em;
+  width: 90%;
+  margin: auto;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  border-top: 3px solid #38f7ab;
+}
+.info-block h2.focus-data {
+  font-size: 5em;
+  margin-top: 0px;
+}
+.circle-wrap {
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: transparent;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #000000;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #38f8ac;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+}
+.cdn-bars > div {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+}
+.cdn-bar-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5em;
+}
+
+.cdn-bar-info  > div {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  top: 3em;
+  justify-content: center;
+  margin: 1em 0.1em;
+  width: 36px;
+}
+.bar-block {
+  width: 80%;
+}
+.cdn-bars {margin: auto;}
+.turbo-info-sec {
+  text-align: center;
+}
+.turbo-info-sec h1 {
+  font-size: 3em;
+}
+
+h5.turbo-connect-subtitle {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+.turbo-connect-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.turbo-connect-button button {
+  padding: 16px 24px;
+  border-radius: 12px;
+  color: black;
+  background: #3cf6ae;
+  border: 2px solid #fff;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+.turbo-image-box img {
+  width: 120px;
+}
+.turbo-step-initial .initial-content {
+  text-align: center;
+}
+.turbo-ui.turbo-dashboard {
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p.turbo-premium {
+  display: inline-block;
+  background: #3cf6ae;
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: #000;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.info-block:nth-child(3) {
+  grid-column: 2  / 1;
+ }
+ .info-block:nth-child(4) {
+  grid-column: 2  / 2;
+ }
+ .info-block:nth-child(5) {
+  grid-column: 3  / 4 
+ }
+ .info-block:nth-child(1 ) {grid-column: 1 / 2;/* background: aqua; */}
+  .info-block:nth-child(2){grid-column: 2 span /    4;}
+ 
+ 
